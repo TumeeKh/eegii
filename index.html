@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="mn-de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MONGER.com — Leben, Arbeiten, Studieren & Coaching in Deutschland</title>
+  <meta name="description" content="Mongolisch-deutsches Informationsportal für Visum, Arbeit, Studium und Integration in Deutschland. Германд амьдрах, ажиллах, суралцах гарын авлага." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="wrap nav-row">
+    <div class="nav-brand">
+      🇲🇳 → 🇩🇪 <MONGER class="com"></MONGER>
+      <span class="bridge">Leben in Deutschland</span>
+    </div>
+    <div class="nav-tabs">
+      <button class="nav-tab active" data-tab="visa"        onclick="switchTab('visa')">Виз / Visum</button>
+      <button class="nav-tab"        data-tab="work"        onclick="switchTab('work')">Ажил / Arbeit</button>
+      <button class="nav-tab"        data-tab="study"       onclick="switchTab('study')">Сургууль / Studium</button>
+      <button class="nav-tab"        data-tab="integration" onclick="switchTab('integration')">Интеграц</button>
+      <button class="nav-tab"        data-tab="coaching"    onclick="switchTab('coaching')">Coaching</button>
+      <button class="nav-tab"        data-tab="lang"        onclick="switchTab('lang')">Хэл / Sprache</button>
+      <button class="nav-tab"        data-tab="about"       onclick="switchTab('about')">Тухай</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="wrap">
+    <div class="hero-eyebrow">Монгол → Германд · Von der Mongolei nach Deutschland</div>
+    <h1>Германд амьдрах, ажиллах, суралцах</h1>
+    <div class="hero-sub">Leben, Arbeiten & Studieren in Deutschland</div>
+    <p class="hero-desc">Виз хүсэлтээс эхлэн ажил хайх, их сургуульд элсэх, интеграцид дасан зохицох хүртэл — бүх мэдээлэл нэг дороо. Монгол болон герман хэлээр.<br>
+    <em style="color:var(--ink-light);font-style:italic;font-size:12px;">Vom Visum bis zur Stelle — alle Informationen auf Mongolisch und Deutsch.</em></p>
+    <div class="hero-chips">
+      <span class="chip">✅ 2025 актуал · aktuell</span>
+      <span class="chip">🇲🇳🇩🇪 Хоёр хэлтэй · Zweisprachig</span>
+      <span class="chip">🤖 KI-Assistent</span>
+      <span class="chip">🆓 Бүрэн үнэгүй · Kostenlos</span>
+    </div>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats-row wrap" style="margin:0 auto;">
+  <div class="stat-block">
+    <div class="stat-num">8+</div>
+    <div class="stat-lbl">Визийн төрөл</div>
+    <div class="stat-lbl-de">Visumarten</div>
+  </div>
+  <div class="stat-block">
+    <div class="stat-num">400+</div>
+    <div class="stat-lbl">Их сургууль</div>
+    <div class="stat-lbl-de">Hochschulen</div>
+  </div>
+  <div class="stat-block">
+    <div class="stat-num">~0 €</div>
+    <div class="stat-lbl">Сургалтын төлбөр</div>
+    <div class="stat-lbl-de">Studiengebühren</div>
+  </div>
+  <div class="stat-block">
+    <div class="stat-num">3–6 сар</div>
+    <div class="stat-lbl">Бэлдэх хугацаа</div>
+    <div class="stat-lbl-de">Vorbereitungszeit</div>
+  </div>
+</div>
+
+<!-- TABS -->
+<div class="tabbar">
+  <div class="wrap">
+    <div class="tabbar-inner">
+      <button class="tab-btn active" data-tab="visa" onclick="switchTab('visa')">
+        Виз &amp; Зөвшөөрөл
+        <span class="tab-btn-de">Visum & Aufenthaltstitel</span>
+      </button>
+      <button class="tab-btn" data-tab="work" onclick="switchTab('work')">
+        Ажил хайх
+        <span class="tab-btn-de">Jobsuche & Bewerbung</span>
+      </button>
+      <button class="tab-btn" data-tab="study" onclick="switchTab('study')">
+        Сургууль & Ausbildung
+        <span class="tab-btn-de">Studium & Ausbildung</span>
+      </button>
+      <button class="tab-btn" data-tab="integration" onclick="switchTab('integration')">
+        Интеграц & Амьдрал
+        <span class="tab-btn-de">Integration & Alltag</span>
+      </button>
+      <button class="tab-btn" data-tab="coaching" onclick="switchTab('coaching')">
+        Coaching & Mentoring
+        <span class="tab-btn-de">Beratung & Mentoring</span>
+      </button>
+      <button class="tab-btn" data-tab="lang" onclick="switchTab('lang')">
+        Герман хэл
+        <span class="tab-btn-de">Deutschkenntnisse</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN -->
+<main>
+  <div class="wrap">
+    <div class="content-grid">
+
+      <!-- LEFT -->
+      <div>
+
+        <!-- ===== VISUM TAB ===== -->
+        <div id="tab-visa" class="tab-pane">
+          <div class="eyebrow">Визийн төрлүүд <span>Visumarten</span></div>
+          <div class="grid-3">
+
+            <div class="card featured clickable" onclick="sendQ('Chancenkarte буюу боломжийн карт визийн талаар дэлгэрэнгүй мэдээлэл өг')">
+              <div class="card-eyebrow">✦ Хамгийн түгээмэл · Beliebteste Option</div>
+              <div class="card-title">Chancenkarte</div>
+              <div class="card-title-de">Chancenkarte / Boломжийн карт</div>
+              <div class="card-detail"><span class="dot"></span>1 жил ажил хайх зөвшөөрөл</div>
+              <div class="card-detail"><span class="dot"></span>Punktebasiert · Оноон тулгуурласан</div>
+              <div class="card-detail"><span class="dot"></span>2024-аас шинэ хууль</div>
+              <span class="badge b-gold">2024 Neu / Шинэ</span>
+            </div>
+
+            <div class="card clickable" onclick="sendQ('Германы ажлын виз Arbeitsvisum авахад яг юу хэрэгтэй вэ')">
+              <div class="card-title">Ажлын виз</div>
+              <div class="card-title-de">Arbeitsvisum</div>
+              <div class="card-detail"><span class="dot"></span>Ажлын гэрээ шаардлагатай</div>
+              <div class="card-detail"><span class="dot"></span>Мэргэжлийн диплом / Berufsabschluss</div>
+              <div class="card-detail"><span class="dot"></span>B1–B2 Deutschkenntnisse</div>
+              <span class="badge b-green">Zuverlässig / Найдвартай</span>
+            </div>
+
+            <div class="card clickable" onclick="sendQ('Германы оюутны виз Studentenvisum авах бүрэн заавар')">
+              <div class="card-title">Оюутны виз</div>
+              <div class="card-title-de">Studentenvisum</div>
+              <div class="card-detail"><span class="dot"></span>Элсэлтийн баримт / Zulassung</div>
+              <div class="card-detail"><span class="dot"></span>11.904 € Sperrkonto</div>
+              <div class="card-detail"><span class="dot"></span>B2–C1 Deutsch</div>
+              <span class="badge b-blue">Hochschule</span>
+            </div>
+
+            <div class="card clickable" onclick="sendQ('Ausbildung виз Германд мэргэжлийн сургалтд орох бүрэн мэдээлэл')">
+              <div class="card-title">Ausbildung виз</div>
+              <div class="card-title-de">Ausbildungsvisum</div>
+              <div class="card-detail"><span class="dot"></span>Ausbildungsvertrag шаардлагатай</div>
+              <div class="card-detail"><span class="dot"></span>800–1.200 €/Monat Vergütung</div>
+              <div class="card-detail"><span class="dot"></span>B1 хангалттай</div>
+              <span class="badge b-green">Vergütete Ausbildung</span>
+            </div>
+
+            <div class="card clickable" onclick="sendQ('Германы хэлний виз Sprachkurs визийн дэлгэрэнгүй')">
+              <div class="card-title">Хэлний виз</div>
+              <div class="card-title-de">Sprachkursvisum</div>
+              <div class="card-detail"><span class="dot"></span>90 хүртэл хоног</div>
+              <div class="card-detail"><span class="dot"></span>Hэлний сургуулийн баримт</div>
+              <div class="card-detail"><span class="dot"></span>Дараа шилжих боломж</div>
+              <span class="badge b-amber">Kurzfristig</span>
+            </div>
+
+            <div class="card clickable" onclick="sendQ('Германы судлаачийн виз Forschervisum PhD researcher')">
+              <div class="card-title">Судлаачийн виз</div>
+              <div class="card-title-de">Forschervisum</div>
+              <div class="card-detail"><span class="dot"></span>Магистр+ боловсрол</div>
+              <div class="card-detail"><span class="dot"></span>Hochschuleinladung шаардлагатай</div>
+              <div class="card-detail"><span class="dot"></span>Англи хэл боломжтой</div>
+              <span class="badge b-blue">PhD / Research</span>
+            </div>
+
+          </div>
+
+          <div class="eyebrow">Виз авах алхамууд <span>Schritte zur Beantragung</span></div>
+          <div class="steps">
+            <div class="step" onclick="sendQ('Германы визэнд ямар бичиг баримт шаардагддаг вэ бүрэн жагсаалт')">
+              <div class="step-n">01</div>
+              <div class="step-body">
+                <div class="step-mn">Бичиг баримт бэлдэх</div>
+                <div class="step-de">Unterlagen vorbereiten</div>
+                <div class="step-desc">Паспорт, диплом, CV, мотивацийн захидал, даатгал, гэрэл зураг · Reisepass, Abschlüsse, Lebenslauf, Motivationsschreiben, Krankenversicherung, Lichtbild</div>
+              </div>
+              <div class="step-time">2–4 долоо хоног</div>
+            </div>
+            <div class="step" onclick="sendQ('Улаанбаатар дахь Германы элчин сайдын яаманд цаг хэрхэн захиалах вэ')">
+              <div class="step-n">02</div>
+              <div class="step-body">
+                <div class="step-mn">Элчин яаманд цаг захиалах</div>
+                <div class="step-de">Termin bei der Deutschen Botschaft</div>
+                <div class="step-desc">Улаанбаатар дахь Германы элчин яам — visabonn.de эсвэл утсаар · Terminbuchung unter visabonn.de</div>
+              </div>
+              <div class="step-time">1–3 сар хүлээх</div>
+            </div>
+            <div class="step" onclick="sendQ('Германы элчин яаманд ярилцлага ямар байдаг вэ яаж бэлдэх вэ')">
+              <div class="step-n">03</div>
+              <div class="step-body">
+                <div class="step-mn">Ярилцлага &amp; баримт шалгалт</div>
+                <div class="step-de">Vorstellungsgespräch & Dokumentenprüfung</div>
+                <div class="step-desc">Герман хэлний мэдлэг, санхүүгийн баталгаа, зорилгоо тодруулна · Sprachkenntnisse, Finanznachweis, Absichten darlegen</div>
+              </div>
+              <div class="step-time">30–60 минут</div>
+            </div>
+            <div class="step" onclick="sendQ('Германд ирсний дараа Aufenthaltstitel яаж авах вэ')">
+              <div class="step-n">04</div>
+              <div class="step-body">
+                <div class="step-mn">Германд ирж Aufenthaltstitel авах</div>
+                <div class="step-de">Aufenthaltstitel beantragen</div>
+                <div class="step-desc">Ausländerbehörde-д бүртгүүлж оршин суух зөвшөөрөл авна · Bei der Ausländerbehörde anmelden und Aufenthaltstitel beantragen</div>
+              </div>
+              <div class="step-time">4–8 долоо хоног</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== АЖИЛ / ARBEIT TAB ===== -->
+        <div id="tab-work" class="tab-pane">
+          <div class="eyebrow">Эрэлттэй мэргэжлүүд <span>Gefragte Berufe in Deutschland</span></div>
+          <div class="grid-2">
+            <div class="card clickable" onclick="sendQ('Германд сувилагчаар ажиллах диплом нотлуулах бүрэн заавар')">
+              <div class="card-title">Сувилагч &amp; Эмч</div>
+              <div class="card-title-de">Pflege & Medizin</div>
+              <div class="card-sub">Хамгийн их дутагдалтай мэргэжил. Монгол дипломоо Германд нотлуулна. Ажил 100% олдоно. · Größter Fachkräftemangel. Mongolischer Abschluss anerkennbar.</div>
+              <span class="badge b-red">Sehr gefragt / Маш их эрэлттэй</span>
+            </div>
+            <div class="card clickable" onclick="sendQ('Германд IT программист ажилд орох LinkedIn цалин виз')">
+              <div class="card-title">IT &amp; Программчлал</div>
+              <div class="card-title-de">IT & Softwareentwicklung</div>
+              <div class="card-sub">Англи хэлээр ч ажиллаж болно. Цалин 3.500–7.000 €/сар. · Auch auf Englisch möglich. Gehalt 3.500–7.000 €/Monat.</div>
+              <span class="badge b-blue">3.500–7.000 €/Monat</span>
+            </div>
+            <div class="card clickable" onclick="sendQ('Ausbildung мэргэжлийн сургалтаар Германд ажилд орох бүрэн мэдээлэл')">
+              <div class="card-title">Ausbildung мэргэжил</div>
+              <div class="card-title-de">Duale Ausbildung</div>
+              <div class="card-sub">2–3 жилийн цалинтай сургалт. Цахилгаанчин, механик, тогооч — маш олон чиглэл. · 2–3 Jahre vergütete Berufsausbildung. Elektriker, Mechatroniker, Koch u.v.m.</div>
+              <span class="badge b-green">Vergütete Ausbildung</span>
+            </div>
+            <div class="card clickable" onclick="sendQ('Германд барилгын ажилчин болж ажиллах виз цалин')">
+              <div class="card-title">Барилга &amp; Үйлдвэр</div>
+              <div class="card-title-de">Bau & Industrie</div>
+              <div class="card-sub">B1 хэлтэй Монголчууд олноор ажилладаг. 2.500–3.500 €/сар. · Mit B1-Deutsch möglich. Gehalt 2.500–3.500 €/Monat.</div>
+              <span class="badge b-amber">Schnelle Beschäftigung</span>
+            </div>
+            <div class="card clickable" onclick="sendQ('Германд ресторан зочид буудалд ажиллах Ausbildung')">
+              <div class="card-title">Ресторан &amp; Зочид буудал</div>
+              <div class="card-title-de">Gastronomie & Hotellerie</div>
+              <div class="card-sub">Hospitality Ausbildung-аар орж болно. Берлин, Мюнхенд монгол ресторанууд байдаг. · Ausbildung in Hotellerie und Gastronomie. Mongolische Restaurants in Berlin und München.</div>
+              <span class="badge b-green">Ausbildung möglich</span>
+            </div>
+            <div class="card clickable" onclick="sendQ('Германд ажлын байр хайх шилдэг сайтууд Indeed StepStone LinkedIn')">
+              <div class="card-title">Ажил хайх сайтууд</div>
+              <div class="card-title-de">Jobportale</div>
+              <div class="card-sub">Indeed.de, StepStone.de, LinkedIn, Make-it-in-Germany.com, Bundesagentur für Arbeit — шилдэг платформууд.</div>
+              <span class="badge b-blue">Online Jobsuche</span>
+            </div>
+          </div>
+
+          <div class="eyebrow">Ажил хайх алхамууд <span>Bewerbungsprozess</span></div>
+          <div class="steps">
+            <div class="step" onclick="sendQ('Германы ажлын байранд CV cover letter яаж бичих вэ Europass')">
+              <div class="step-n">01</div>
+              <div class="step-body">
+                <div class="step-mn">Герман CV болон Anschreiben бэлдэх</div>
+                <div class="step-de">Lebenslauf & Anschreiben erstellen</div>
+                <div class="step-desc">Europass загварын CV, мотивацийн захидал (Anschreiben), дипломын орчуулга · Europass-Lebenslauf, Anschreiben, beglaubigte Übersetzungen Ihrer Abschlüsse</div>
+              </div>
+              <div class="step-time">1–2 долоо хоног</div>
+            </div>
+            <div class="step" onclick="sendQ('Монгол дипломыг Германд нотлуулах anabin хэрхэн ажилладаг вэ')">
+              <div class="step-n">02</div>
+              <div class="step-body">
+                <div class="step-mn">Диплом нотлуулах</div>
+                <div class="step-de">Anerkennung des Abschlusses (Anabin)</div>
+                <div class="step-desc">Монгол дипломоо Германд хүлээн зөвшөөрүүлэх — anabin.kmk.org дээр шалгана · Mongolischer Abschluss prüfen unter anabin.kmk.org, ggf. Anerkennungsverfahren einleiten</div>
+              </div>
+              <div class="step-time">1–3 сар</div>
+            </div>
+            <div class="step" onclick="sendQ('Германы ажил олгогчид онлайн ярилцлагад хэрхэн бэлдэх вэ')">
+              <div class="step-n">03</div>
+              <div class="step-body">
+                <div class="step-mn">Онлайн өргөдөл &amp; ярилцлага</div>
+                <div class="step-de">Online-Bewerbung & Vorstellungsgespräch</div>
+                <div class="step-desc">Indeed, StepStone, LinkedIn дээр идэвхтэй хайлт явуулж, ярилцлагад бэлдэх · Profil anlegen und Gespräche auf Deutsch oder Englisch vorbereiten</div>
+              </div>
+              <div class="step-time">Тогтмол үйл ажиллагаа</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== СУРГУУЛЬ / STUDIUM TAB ===== -->
+        <div id="tab-study" class="tab-pane">
+          <div class="eyebrow">Суралцах боломжууд <span>Studienmöglichkeiten in Deutschland</span></div>
+          <div class="grid-2">
+            <div class="card clickable" onclick="sendQ('Германы их сургуульд элсэх шаардлага хэрхэн бүртгүүлэх вэ')">
+              <div class="card-title">Их сургууль</div>
+              <div class="card-title-de">Universität (Uni)</div>
+              <div class="card-sub">Ихэнх нь үнэгүй — зөвхөн улирлын хураамж ~350 €. TU Berlin, LMU München, Heidelberg зэрэг олон их сургуульд элсэж болно. · Studiengebührenfrei, nur Semesterbeitrag ~350 €.</div>
+              <span class="badge b-green">Gebührenfrei / Бараг үнэгүй</span>
+            </div>
+            <div class="card clickable" onclick="sendQ('Германы Fachhochschule практик их сургуульд элсэх мэдээлэл')">
+              <div class="card-title">Fachhochschule (FH)</div>
+              <div class="card-title-de">Hochschule für angewandte Wissenschaften</div>
+              <div class="card-sub">Практик чиглэлтэй. Ажил олоход хялбар. Инженерчлэл, бизнес, дизайн. · Praxisorientiert. Ingenieurwesen, BWL, Design.</div>
+              <span class="badge b-blue">Praxisnah</span>
+            </div>
+            <div class="card clickable" onclick="sendQ('DAAD тэтгэлэг монгол оюутнуудад хэрхэн авах вэ')">
+              <div class="card-title">DAAD тэтгэлэг</div>
+              <div class="card-title-de">DAAD-Stipendium</div>
+              <div class="card-sub">Германы хамгийн том тэтгэлэг — бакалавр, магистр, PhD. Монголчуудад тусгай квот байдаг. · Größtes deutsches Stipendienprogramm. Sonderquoten für Mongolei.</div>
+              <span class="badge b-amber">Wettbewerb / Өрсөлдөөнтэй</span>
+            </div>
+            <div class="card clickable" onclick="sendQ('Германы Ausbildung мэргэжлийн сургалт ямар давуу талтай вэ')">
+              <div class="card-title">Ausbildung</div>
+              <div class="card-title-de">Duale Berufsausbildung</div>
+              <div class="card-sub">2–3 жил. Цалин авч суралцана. Сувилагч, цахилгаанчин, механик — маш их эрэлттэй. · 2–3 Jahre, vergütet. Pflege, Elektro, Mechatronik sehr gefragt.</div>
+              <span class="badge b-green">Vergütung / Цалин авна</span>
+            </div>
+          </div>
+
+          <div class="eyebrow">Элсэлтийн алхамууд <span>Bewerbungsprozess für das Studium</span></div>
+          <div class="steps">
+            <div class="step" onclick="sendQ('Герман хэл B2 C1 сурах хамгийн хурдан арга')">
+              <div class="step-n">01</div>
+              <div class="step-body">
+                <div class="step-mn">Герман хэл сурах — B2/C1 хүртэл</div>
+                <div class="step-de">Deutschkenntnisse auf B2/C1 erwerben</div>
+                <div class="step-desc">Их сургуульд B2–C1 шаардлагатай. Монголд Goethe-Institut-д сурч болно. · Für die meisten Studiengänge erforderlich. Goethe-Institut Ulaanbaatar bietet Kurse an.</div>
+              </div>
+              <div class="step-time">6–12 сар</div>
+            </div>
+            <div class="step" onclick="sendQ('uni-assist дээр Германы их сургуульд өргөдөл яаж гаргах вэ')">
+              <div class="step-n">02</div>
+              <div class="step-body">
+                <div class="step-mn">uni-assist.de дээр өргөдөл гаргах</div>
+                <div class="step-de">Bewerbung über uni-assist.de</div>
+                <div class="step-desc">Олонх их сургуулийн гадаадын оюутны өргөдлийг uni-assist боловсруулдаг. · Die meisten deutschen Hochschulen nutzen uni-assist für internationale Bewerber.</div>
+              </div>
+              <div class="step-time">3–4 сар өмнө</div>
+            </div>
+            <div class="step" onclick="sendQ('Германы оюутны визэнд blocked account Sperrkonto яаж нээх Fintiba Coracle')">
+              <div class="step-n">03</div>
+              <div class="step-body">
+                <div class="step-mn">Sperrkonto (Blocked Account) нээх</div>
+                <div class="step-de">Sperrkonto eröffnen</div>
+                <div class="step-desc">11.904 € (2025) байршуулах. Fintiba, Coracle, Deutsche Bank дээр нээж болно. · Nachweis der Finanzierung durch ein Sperrkonto (11.904 € für 2025).</div>
+              </div>
+              <div class="step-time">2–3 долоо хоног</div>
+            </div>
+            <div class="step" onclick="sendQ('Германд ирсний дараа оюутан юу хийх ёстой вэ Anmeldung TK даатгал')">
+              <div class="step-n">04</div>
+              <div class="step-body">
+                <div class="step-mn">Германд ирж бүртгүүлэх</div>
+                <div class="step-de">Anmeldung, Krankenversicherung & Immatrikulation</div>
+                <div class="step-desc">Anmeldung, TK/AOK эрүүл мэндийн даатгал, оюутны карт, банкны данс нээх. · Anmeldung beim Einwohnermeldeamt, Krankenversicherung (TK/AOK), Immatrikulation, Bankkonto.</div>
+              </div>
+              <div class="step-time">1-р долоо хоног</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== INTEGRATION TAB ===== -->
+        <div id="tab-integration" class="tab-pane">
+          <div class="eyebrow">Германд ирсний дараах чухал алхамууд <span>Erste Schritte nach der Ankunft</span></div>
+          <div class="steps" style="margin-bottom:28px;">
+            <div class="life-row" onclick="sendQ('Германд Anmeldung бүртгэл яаж хийх юу авч явах вэ')">
+              <div class="life-icon">📋</div>
+              <div class="life-body">
+                <div class="life-mn">Anmeldung — орон нутгийн бүртгэл</div>
+                <div class="life-de">Einwohnermeldeamt / Bürgeramt</div>
+                <div class="life-desc">Ирснийхээ дараа 14 хоногт Bürgeramt-д заавал бүртгүүлнэ. Бүх зүйлийн үндэс — банк, даатгал, виз бүгд энэнд тулгуурладаг. · Innerhalb von 14 Tagen beim Bürgeramt anmelden. Basis für alles Weitere.</div>
+              </div>
+            </div>
+            <div class="life-row" onclick="sendQ('Германд эрүүл мэндийн даатгал TK AOK Barmer сонгох яаж бүртгүүлэх')">
+              <div class="life-icon">🏥</div>
+              <div class="life-body">
+                <div class="life-mn">Эрүүл мэндийн даатгал</div>
+                <div class="life-de">Krankenversicherung (gesetzlich)</div>
+                <div class="life-desc">Оюутан: ~120 €/сар · Ажилтан: цалингийн 14.6%. TK, AOK, Barmer — гол компаниуд. Заавал шаардлагатай. · Pflichtversicherung. Studenten ca. 120 €/Monat. TK empfehlenswert.</div>
+              </div>
+            </div>
+            <div class="life-row" onclick="sendQ('Германд банкны данс нээх N26 Revolut Sparkasse харьцуулга')">
+              <div class="life-icon">🏦</div>
+              <div class="life-body">
+                <div class="life-mn">Банкны данс нээх</div>
+                <div class="life-de">Bankkonto eröffnen</div>
+                <div class="life-desc">N26, Revolut — онлайн хурдан. Deutsche Bank, Sparkasse — уламжлалт. Anmeldung хийснийхээ дараа нээнэ. · N26 oder DKB online schnell eröffnen. Anmeldung erforderlich.</div>
+              </div>
+            </div>
+            <div class="life-row" onclick="sendQ('Deutschlandticket 49 евро тийз хэрхэн авах ашиглах')">
+              <div class="life-icon">🚆</div>
+              <div class="life-body">
+                <div class="life-mn">Нийтийн тээвэр</div>
+                <div class="life-de">Öffentlicher Nahverkehr / Deutschlandticket</div>
+                <div class="life-desc">Deutschlandticket: 49 €/сар — бүх Германы нийтийн тээвэр. Оюутнуудад хямдарсан байдаг. · 49 €/Monat für alle Nahverkehrsmittel bundesweit. Studentenrabatt möglich.</div>
+              </div>
+            </div>
+            <div class="life-row" onclick="sendQ('Германд монгол хүмүүсийн нийгэмлэг клуб байдаг уу Берлин Мюнхен')">
+              <div class="life-icon">🤝</div>
+              <div class="life-body">
+                <div class="life-mn">Монгол нийгэмлэг олох</div>
+                <div class="life-de">Mongolische Community in Deutschland</div>
+                <div class="life-desc">Берлин, Мюнхен, Гамбургт монгол оюутнуудын клубууд, Facebook бүлгүүд идэвхтэй. · Mongolische Studenten- und Kulturvereine in Berlin, München, Hamburg. Facebook-Gruppen aktiv.</div>
+              </div>
+            </div>
+            <div class="life-row" onclick="sendQ('Германы хотуудад орон сууц түрээслэх үнэ харьцуулга WG хувааж амьдрах')">
+              <div class="life-icon">🏠</div>
+              <div class="life-body">
+                <div class="life-mn">Орон сууц хайх</div>
+                <div class="life-de">Wohnungssuche</div>
+                <div class="life-desc">Мюнхен 1.200–1.800 € · Берлин 800–1.400 € · Лейпциг 500–900 €. WG (Wohngemeinschaft) — хямдарна. · WG-Gesucht.de, Immobilienscout24. WG deutlich günstiger.</div>
+              </div>
+            </div>
+            <div class="life-row" onclick="sendQ('Германд Integrationskurs интеграцийн курс яаж бүртгүүлэх хэн авах эрхтэй')">
+              <div class="life-icon">🏫</div>
+              <div class="life-body">
+                <div class="life-mn">Integrationskurs — интеграцийн сургалт</div>
+                <div class="life-de">Integrationskurs (BAMF)</div>
+                <div class="life-desc">Герман хэл болон Германы нийгмийн тухай BAMF-ын зохион байгуулдаг заавал эсвэл сонголтын сургалт. Шинэ иргэдэд зайлшгүй чухал. · Sprach- und Orientierungskurs des BAMF. Für Neuzuwanderer kostenlos oder günstig.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== COACHING TAB ===== -->
+        <div id="tab-coaching" class="tab-pane">
+          <div class="eyebrow">Coaching &amp; Менторинг хаанаас олох вэ <span>Wo finde ich Beratung und Mentoring?</span></div>
+
+          <p style="font-size:13px;font-family:-apple-system,system-ui,sans-serif;color:var(--ink-mid);line-height:1.7;margin-bottom:20px;">
+            Германд шилжин суурьших замдаа мэргэжлийн зөвлөгөө, туршлагатай ментор маш чухал. Доорх байгууллага, програмууд Монгол болон гадаадын залуучуудад зориулсан дэмжлэг үзүүлдэг.<br>
+            <em style="color:var(--ink-light);">Professionelle Beratung und erfahrene Mentoren sind entscheidend beim Start in Deutschland.</em>
+          </p>
+
+          <div class="coaching-grid">
+            <div class="coaching-card highlighted" onclick="sendQ('Make it in Germany платформ монгол хүмүүст хэрхэн ашигтай Coaching олох')">
+              <div class="coaching-icon">🇩🇪</div>
+              <div class="coaching-title">Make it in Germany</div>
+              <div class="coaching-title-de">Bundesregierung · make-it-in-germany.com</div>
+              <div class="coaching-desc">Германы засгийн газрын албан ёсны гадаадын мэргэжилтнүүдэд зориулсан платформ. Ажил хайх, виз, нийгмийн амьдралын талаар мэргэжлийн зөвлөгөө. · Offizielles Portal der Bundesregierung für ausländische Fachkräfte.</div>
+              <span class="badge b-gold">Официал · Offiziell</span>
+            </div>
+
+            <div class="coaching-card" onclick="sendQ('BAMF Миграцийн зөвлөлгөөний төв Германд юу хийдэг вэ')">
+              <div class="coaching-icon">🏛</div>
+              <div class="coaching-title">BAMF Migrationsberatung</div>
+              <div class="coaching-title-de">Bundesamt für Migration und Flüchtlinge</div>
+              <div class="coaching-desc">Германд шинэ иргэдэд зориулсан үнэгүй зөвлөгөөний үйлчилгээ. Интеграц, хэл, ажил эрхлэлтийн асуудлаар. · Kostenlose Beratung für Neuzuwanderer. Fragen zu Integration, Sprache, Arbeit.</div>
+              <span class="badge b-blue">Үнэгүй · Kostenlos</span>
+            </div>
+
+            <div class="coaching-card" onclick="sendQ('DAAD тэтгэлэгт Mentoring програмд хэрхэн оролцох вэ')">
+              <div class="coaching-icon">🎓</div>
+              <div class="coaching-title">DAAD Mentoring &amp; Alumni</div>
+              <div class="coaching-title-de">Deutscher Akademischer Austauschdienst</div>
+              <div class="coaching-desc">Оюутнуудад зориулсан ментор программ, тэтгэлэг, academic network. Монголд DAAD Information Center байдаг. · Mentoringprogramme und Stipendien für internationale Studierende. DAAD-Büro in Ulaanbaatar.</div>
+              <span class="badge b-amber">Оюутнуудад · Für Studierende</span>
+            </div>
+
+            <div class="coaching-card" onclick="sendQ('Германы Bundesagentur für Arbeit ажлын зуучлалын зөвлөгөө авах')">
+              <div class="coaching-icon">💼</div>
+              <div class="coaching-title">Bundesagentur für Arbeit</div>
+              <div class="coaching-title-de">Berufliche Beratung · arbeitsagentur.de</div>
+              <div class="coaching-desc">Ажил хайхад мэргэжлийн зөвлөгөө, Германд хүлээн зөвшөөрөх процесс, дахин мэргэжил олгох сургалт. · Professionelle Berufsberatung, Qualifizierung und Unterstützung bei der Jobsuche.</div>
+              <span class="badge b-green">Ажлын зуучлал</span>
+            </div>
+
+            <div class="coaching-card" onclick="sendQ('IQ Netzwerk гадаадын мэргэжилтнүүдийн диплом нотлох зөвлөгөө')">
+              <div class="coaching-icon">🔎</div>
+              <div class="coaching-title">IQ Netzwerk</div>
+              <div class="coaching-title-de">Netzwerk Integration durch Qualifizierung</div>
+              <div class="coaching-desc">Гадаадын мэргэжилтнүүдийн диплом нотлуулах, мэргэжлийн интеграцийн тусгайлсан зөвлөгөөний сүлжээ. · Beratung zur Anerkennung ausländischer Berufsabschlüsse und beruflichen Integration.</div>
+              <span class="badge b-blue">Диплом нотлуулах</span>
+            </div>
+
+            <div class="coaching-card" onclick="sendQ('Германы их сургуулийн International Office оюутны зөвлөгөө')">
+              <div class="coaching-icon">🌐</div>
+              <div class="coaching-title">International Office</div>
+              <div class="coaching-title-de">Международный отдел вузов</div>
+              <div class="coaching-desc">Бараг бүх их сургуульд International Office байдаг — гадаадын оюутнуудад элсэлт, байр, стипенди, ментор програмын талаар зөвлөгөө өгдөг. · Jede Hochschule hat ein International Office mit Beratung, Mentoring und Wohnheimplätzen.</div>
+              <span class="badge b-green">Их сургуульд · Universität</span>
+            </div>
+
+            <div class="coaching-card" onclick="sendQ('Германы Гэмийнде дээр ажилд интеграц дэмжих програм байдаг уу')">
+              <div class="coaching-icon">🏘</div>
+              <div class="coaching-title">Lokale Integrationsangebote</div>
+              <div class="coaching-title-de">Орон нутгийн интеграц</div>
+              <div class="coaching-desc">Олон хот, Gemeinde дахь Jugendmigrationsdienst (JMD), Caritas, Diakonie зэрэг байгууллагууд үнэгүй зөвлөгөө, Germany хэлний туслалцаа, нийгмийн холбоо үзүүлдэг. · JMD, Caritas, Diakonie bieten kostenlose Beratung, Deutschkurse und Netzwerke.</div>
+              <span class="badge b-amber">Орон нутаг · Vor Ort</span>
+            </div>
+
+            <div class="coaching-card" onclick="sendQ('Монгол нийгэмлэг Германд менторинг дэмжлэг олдог уу Facebook бүлэг')">
+              <div class="coaching-icon">🇲🇳</div>
+              <div class="coaching-title">Монгол нийгэмлэгийн дэмжлэг</div>
+              <div class="coaching-title-de">Mongolische Community</div>
+              <div class="coaching-desc">Берлин, Мюнхен, Гамбургт монгол оюутнуудын клубууд болон Facebook бүлгүүд нь туршлага хуваалцах, ментор олох, практик зөвлөгөө авах хамгийн хурдан арга. · Mongolische Studenten-Clubs und Facebook-Gruppen. Erfahrungsaustausch und gegenseitige Unterstützung.</div>
+              <span class="badge b-gold">Монголоор · Auf Mongolisch</span>
+            </div>
+          </div>
+
+          <div class="eyebrow">AI туслахаар зөвлөгөө авах <span>KI-Assistent für Ihre Fragen</span></div>
+          <div class="card" style="max-width:520px;">
+            <div class="card-title">Асуултаа AI туслахаас асуугаарай</div>
+            <div class="card-title-de">Fragen Sie den KI-Assistenten</div>
+            <p style="font-size:13px;font-family:-apple-system,system-ui,sans-serif;color:var(--ink-mid);line-height:1.65;margin-bottom:12px;">
+              Виз, ажил, сургууль, интеграц, coaching программ гэх мэт асуулт байвал баруун талын AI туслах дээр бичнэ үү. Монгол болон герман хэлээр хариулна.<br>
+              <em style="color:var(--ink-light);">Der KI-Assistent beantwortet Fragen zu Visum, Arbeit, Studium, Integration und Coaching auf Mongolisch und Deutsch.</em>
+            </p>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;">
+              <button class="chip" style="cursor:pointer;border:none;" onclick="sendQ('Германд ажилд интеграц болоход Coaching програм хаанаас олох вэ')">→ Coaching хаанаас олох?</button>
+              <button class="chip" style="cursor:pointer;border:none;" onclick="sendQ('IQ Netzwerk гадаадын мэргэжилтнүүдийн диплом нотлох зөвлөгөө')">→ Диплом нотлуулах</button>
+              <button class="chip" style="cursor:pointer;border:none;" onclick="sendQ('Integrationskurs BAMF яаж бүртгүүлэх')">→ Integrationskurs</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== ХЭЛНИЙ TAB ===== -->
+        <div id="tab-lang" class="tab-pane">
+          <div class="eyebrow">Герман хэлний түвшин <span>Deutschkenntnisse — Niveaustufen</span></div>
+          <div class="lang-levels">
+            <div class="lang-level" onclick="sendQ('A1 A2 герман хэл сурах хамгийн сайн арга апп материал')">
+              <div class="level-badge">A1</div>
+              <div class="level-body">
+                <div class="level-mn">Анхан шат — үндсэн харилцаа</div>
+                <div class="level-de">Grundstufe — Einfache Kommunikation</div>
+                <div class="level-desc">Мэндчилгээ, тооцоо, өдөр тутмын үг. Duolingo, Deutsche Welle-ийн A1 материал ашиглана. · Begrüßung, Zahlen, Alltagsvokabular. Duolingo, DW Deutsch ideal.</div>
+              </div>
+              <div class="level-time">1–2 сар</div>
+            </div>
+            <div class="lang-level" onclick="sendQ('A2 герман хэл Goethe шалгалт хэрхэн бэлдэх')">
+              <div class="level-badge">A2</div>
+              <div class="level-body">
+                <div class="level-mn">Суурь — өдөр тутмын амьдрал</div>
+                <div class="level-de">Aufbaustufe — Alltagssituationen</div>
+                <div class="level-desc">Дэлгүүр, эмнэлэг, ажлын газрын харилцаа. Goethe A2 шалгалт өгч болно. · Einkaufen, Arzt, Arbeit. Goethe-Zertifikat A2 möglich.</div>
+              </div>
+              <div class="level-time">2–3 сар</div>
+            </div>
+            <div class="lang-level active-level" onclick="sendQ('B1 герман хэл Goethe шалгалтад хэрхэн бэлдэх материал')">
+              <div class="level-badge">B1</div>
+              <div class="level-body">
+                <div class="level-mn">Дунд — Ausbildung &amp; ажлын хамгийн бага шаардлага</div>
+                <div class="level-de">Mittelstufe — Mindestanforderung für Ausbildung & viele Jobs</div>
+                <div class="level-desc">Ихэнх Ausbildung болон ажлын байранд B1 хангалттай. Chancenkarte-д B1 шаардлагатай. · B1 reicht für viele Ausbildungsberufe und die Chancenkarte.</div>
+              </div>
+              <div class="level-time">3–4 сар</div>
+            </div>
+            <div class="lang-level" onclick="sendQ('B2 герман хэл сурах TestDaF DSH шалгалт их сургуульд')">
+              <div class="level-badge">B2</div>
+              <div class="level-body">
+                <div class="level-mn">Дунд дээд — Их сургуулийн хамгийн бага шаардлага</div>
+                <div class="level-de">Fortgeschritten — Mindestanforderung für die meisten Studiengänge</div>
+                <div class="level-desc">Олонх их сургуулийн шаардлага. TestDaF, DSH шалгалт өгнө. · TestDaF oder DSH für das Studium. Für Ärzte und Pflegekräfte oft erforderlich.</div>
+              </div>
+              <div class="level-time">4–6 сар</div>
+            </div>
+            <div class="lang-level" onclick="sendQ('C1 герман хэл эмч сувилагч мэргэжлийн диплом нотлуулахад хэрэгтэй')">
+              <div class="level-badge">C1</div>
+              <div class="level-body">
+                <div class="level-mn">Дэвшилтэт — Мэргэжлийн, академик</div>
+                <div class="level-de">Oberstufe — Beruflich & akademisch</div>
+                <div class="level-desc">Эмч, сувилагч, хуульчийн мэргэжил нотлуулахад C1 шаардлагатай. · Für Ärzte, Juristen, anspruchsvolle akademische Berufe erforderlich.</div>
+              </div>
+              <div class="level-time">6–9 сар</div>
+            </div>
+          </div>
+
+          <div class="eyebrow">Хаана сурах вэ <span>Wo Deutsch lernen?</span></div>
+          <div class="grid-2">
+            <div class="card clickable" onclick="sendQ('Goethe Institut Монгол улс Улаанбаатар герман хэлний курс хэрхэн бүртгүүлэх')">
+              <div class="card-title">Goethe-Institut Монгол</div>
+              <div class="card-title-de">Goethe-Institut Ulaanbaatar</div>
+              <div class="card-sub">Улаанбаатар дахь албан ёсны Германы хэлний институт. Олон улсад хүлээн зөвшөөрөгдсөн гэрчилгээ. · Offizielles Deutschinstitut in Ulaanbaatar. International anerkannte Zertifikate.</div>
+              <span class="badge b-gold">Официал · Offiziell</span>
+            </div>
+            <div class="card clickable" onclick="sendQ('Герман хэл сурах үнэгүй апп сайт Duolingo Deutsche Welle Babbel')">
+              <div class="card-title">Үнэгүй онлайн эх сурвалж</div>
+              <div class="card-title-de">Kostenlose Online-Ressourcen</div>
+              <div class="card-sub">Duolingo, Deutsche Welle (dw.com/learn-german), Babbel, YouTube "Deutsch für Euch" — A1-аас C1 хүртэл бүгд байна. · A1 bis C1 kostenlos und strukturiert verfügbar.</div>
+              <span class="badge b-green">Үнэгүй · Kostenlos</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== ABOUT TAB ===== -->
+        <div id="tab-about" class="tab-pane">
+          <div class="about-card">
+            <h2>Германд.мн <span>— Was ist das?</span></h2>
+            <p>
+              Монгол улсаас Германд ирж ажиллах, суралцах, амьдрахыг хүссэн залуучуудад зориулсан хоёр хэлт мэдээллийн нээлттэй платформ. Виз хүсэлтээс эхлэн, ажил хайх, их сургуульд элсэх, интеграцид дасан зохицох хүртэл бүх мэдээллийг монгол болон герман хэлээр нэгтгэсэн.
+            </p>
+            <p>
+              <em>Германд.мн ist eine zweisprachige Informationsplattform für Mongolen, die in Deutschland arbeiten, studieren oder leben möchten — vom Visum über Jobsuche bis zur Integration.</em>
+            </p>
+            <p>
+              Мэдээлэл нь <strong>make-it-in-germany.com</strong>, <strong>bamf.de</strong>, <strong>daad.de</strong>, <strong>goethe.de</strong>, <strong>anabin.kmk.org</strong> зэрэг найдвартай эх сурвалжид тулгуурладаг. AI туслах нь Claude (Anthropic)-д суурилсан.<br>
+              <em style="color:var(--ink-light);">Quellen: make-it-in-germany.com, bamf.de, daad.de, goethe.de, anabin.kmk.org</em>
+            </p>
+            <div class="about-sources">
+              <span class="badge b-green">✅ 100% үнэгүй · Kostenlos</span>
+              <span class="badge b-blue">🇲🇳🇩🇪 Zweisprachig</span>
+              <span class="badge b-gold">🤖 KI-powered (Claude)</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /left -->
+
+      <!-- RIGHT: AI PANEL -->
+      <aside class="ai-panel">
+        <div class="ai-box">
+          <div class="ai-header">
+            <div class="ai-header-left">
+              <div class="ai-dot" id="ai-dot"></div>
+              KI-Assistent · AI туслах
+            </div>
+            <div class="ai-header-sub">Монгол &amp; Deutsch</div>
+          </div>
+          <div class="ai-body" id="ai-result">
+            <p class="ai-placeholder">Доорх товчнуудаас сонгох эсвэл асуултаа бичнэ үү. Виз, ажил, сургууль, интеграц, coaching — бүх асуултад монгол болон герман хэлээр хариулна.<br><br><em>Wählen Sie unten oder schreiben Sie Ihre Frage. Antwort auf Mongolisch und Deutsch.</em></p>
+          </div>
+          <div class="quick-qs">
+            <button class="quick-q" onclick="sendQ('Германд ажиллахад ямар виз хэрэгтэй вэ хаанаас эхлэх вэ')">
+              <span class="quick-q-mn">→ Хаанаас эхлэх вэ?</span>
+              <span class="quick-q-de">Wo anfangen? Erster Schritt</span>
+            </button>
+            <button class="quick-q" onclick="sendQ('Chancenkarte яг хэрхэн авах вэ оноо яаж тооцох вэ')">
+              <span class="quick-q-mn">→ Chancenkarte хэрхэн авах?</span>
+              <span class="quick-q-de">Chancenkarte — Punktesystem</span>
+            </button>
+            <button class="quick-q" onclick="sendQ('Германы их сургуульд үнэгүй суралцах боломж байдаг уу DAAD тэтгэлэг')">
+              <span class="quick-q-mn">→ Үнэгүй сурч болох уу?</span>
+              <span class="quick-q-de">Studium kostenlos möglich?</span>
+            </button>
+            <button class="quick-q" onclick="sendQ('Германд ажилд интеграц болоход Coaching програм хаанаас олох вэ')">
+              <span class="quick-q-mn">→ Coaching хаанаас олох?</span>
+              <span class="quick-q-de">Wo Mentoring finden?</span>
+            </button>
+            <button class="quick-q" onclick="sendQ('Монгол дипломыг Германд хэрхэн нотлуулах вэ anabin IQ Netzwerk')">
+              <span class="quick-q-mn">→ Диплом нотлуулах?</span>
+              <span class="quick-q-de">Abschluss anerkennen lassen</span>
+            </button>
+          </div>
+          <div class="ai-input-row">
+            <input type="text" id="ai-input" placeholder="Асуулт бичнэ үү · Ihre Frage..." />
+            <button class="ai-send-btn" id="ai-send">→</button>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    Германд.мн — Mongolisch-deutsches Informationsportal · KI-Assistent powered by Claude (Anthropic) · 2025<br>
+    <em>Quellen / Эх сурвалж: make-it-in-germany.com · bamf.de · daad.de · goethe.de · anabin.kmk.org</em>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
